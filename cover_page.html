@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>enking | Trang cá nhân</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    /* Reset cơ bản */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      height: 100vh;
+      background: linear-gradient(135deg, #121212, #4facfe);
+      color: #f0f0f0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 1rem;
+      animation: backgroundPulse 10s ease-in-out infinite;
+    }
+    /* thay đổi màu nền*/
+    @keyframes backgroundPulse {
+      0%, 100% {
+        background: linear-gradient(135deg, #121212, #4facfe);
+      }
+      50% {
+        background: linear-gradient(135deg, #1c1c1c, #3a86ff);
+      }
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      text-shadow: 0 0 8px #3a86ff, 0 0 15px #3a86ff;
+    }
+
+    p {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      text-shadow: 0 0 5px #000000a0;
+      max-width: 400px;
+    }
+
+    strong {
+      color: #00d8ff;
+      text-shadow: 0 0 8px #00d8ffaa;
+    }
+
+    a {
+      color: #00d8ff;
+      text-decoration: none;
+      font-weight: 600;
+      border: 2px solid #00d8ff;
+      padding: 0.5rem 1.3rem;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px #00d8ff44;
+      display: inline-block;
+      user-select: none;
+    }
+    /*hiệu ứng di chuột*/
+    a:hover,
+    a:focus {
+      background-color: #00d8ff;
+      color: #121212;
+      box-shadow: 0 0 20px #00d8ffcc;
+      text-decoration: none;
+      outline: none;
+      cursor: pointer;
+    }
+
+    /* Responsive cho màn nhỏ */
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+      p {
+        font-size: 1rem;
+        max-width: 100%;
+      }
+      a {
+        padding: 0.4rem 1rem;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>👑 Xin chào! Tôi là 0xTai</h1>
+  <p>Đây là không gian cá nhân của tôi tại <strong>enking.id.vn</strong></p>
+  <p>
+    Theo dõi tôi trên
+    <a href="https://github.com/enking" target="_blank" rel="noopener noreferrer"
+      >GitHub</a
+    >
+  </p>
+</body>
+</html>
